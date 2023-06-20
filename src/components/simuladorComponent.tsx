@@ -62,6 +62,7 @@ const Simulador = ({ }) => {
         setPropertyValue(amount);
         console.log(amount);
       };
+      console.log(setPropertyValue)
 
     return (
         <div style={{ width:'100%', height: customClass, background: 'var(--gray)' }}>

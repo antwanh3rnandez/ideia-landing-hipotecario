@@ -1,16 +1,13 @@
 import Container  from '@mui/material/Container';
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import Card from "@mui/material/Card";
 
 import { IconDeviceLaptop } from '@tabler/icons-react';
 import { IconHomeDollar } from '@tabler/icons-react';
 import { IconBrowserCheck } from '@tabler/icons-react';
 import { IconHomeShield } from '@tabler/icons-react';
 
-import card1 from '../assets/card1.jpg';
 
 const Benefits = ({ }) => {
 
