@@ -118,7 +118,7 @@ const Benefits = ({ }) => {
                                     marginTop: '15px',
                                     marginBottom: '15px'
                                 }}>
-                                Tus datos de mantienen asegurado en todo momento.
+                                Tus datos se mantienen encriptados en todo momento.
                             </Typography>
                         </Box>
                     </Grid>

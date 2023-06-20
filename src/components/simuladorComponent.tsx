@@ -32,7 +32,7 @@ const Simulador = ({ }) => {
             } else if (window.innerWidth < 1085) {
                 setCustomClass('700px');
             } else {
-                setCustomClass('650px');
+                setCustomClass('750px');
             }
         };
 
@@ -290,8 +290,34 @@ const Simulador = ({ }) => {
                                 </Grid>
                             </Grid>
                         </Card>
+                        <div style={{display: 'flex'}}>
+                            <Button 
+                                variant="contained" 
+                                sx={{ 
+                                    margin: '0 auto',
+                                    marginTop: '30px',
+                                    width: '25%',
+                                    borderRadius: '20px',
+                                    background: 'var(--secondary)',
+                                    paddingLeft: '30px',    
+                                    paddingRight: '30px',      
+                                    boxShadow: '2px 6px 4px rgba(0, 0, 0, 0.25)',                    
+                                    color: '#000',
+                                    '&:hover': {
+                                        background: 'var(--dark-blue)',
+                                        color: '#FFF'
+                                    } 
+                                }}>
+                                    <Typography variant="h6" fontWeight={500} 
+                                        sx={{
+                                            fontFamily: 'Poppins, sans-serif', 
+                                            textAlign: 'center'
+                                        }}>
+                                    Solicitar Crédito
+                                    </Typography>
+                            </Button>
+                        </div>
             </Container>
-
         </div>
       
     );

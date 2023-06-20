@@ -63,7 +63,7 @@ const Features = ({ }) => {
                                 <div
                                 style={{
                                     width: '100%',
-                                    // height: '150px',
+                                    height: '180px',
                                     borderTopLeftRadius: '15px',
                                     borderTopRightRadius: '15px',
                                     backgroundColor: 'black',
@@ -83,12 +83,14 @@ const Features = ({ }) => {
                                 </div>
                                 <div
                                     style={{
+                                        maxHeight: '264px', //240,
                                         display: 'flex',
                                         flexDirection: 'column',
-                                        justifyContent: 'center',
+                                        justifyContent: 'flex-start',
                                         alignItems: 'center',
                                         flex: '1',
                                         padding: '15px',
+                                        // overflowY: 'scroll'
                                     }}
                                 >
                                     <Typography
@@ -100,11 +102,11 @@ const Features = ({ }) => {
                                         marginBottom: '15px',
                                         }}
                                     >
-                                        Crédito para terreno
+                                        Crédito de adquisición
                                     </Typography>
                                     <Typography
                                         fontSize={16}
-                                        fontWeight={600}
+                                        fontWeight={500}
                                         sx={{
                                         fontFamily: 'Poppins, sans-serif',
                                         textAlign: 'center',
@@ -112,7 +114,7 @@ const Features = ({ }) => {
                                     >
                                         Estrena tu nuevo hogar con un crédito adaptado a ti.<br/><br/>
                                         &bull; Crédito Bancario<br/>
-                                        &bull; Crédito Infonavit<br/>
+                                        &bull; Apoyo Infonavit<br/>
                                         &bull; Crédito Cofinavit<br/>
                                         &bull; Crédito FOVISSSTE
                                     </Typography>
@@ -135,7 +137,7 @@ const Features = ({ }) => {
                                 <div
                                 style={{
                                     width: '100%',
-                                    // height: '150px',
+                                    height: '180px',
                                     borderTopLeftRadius: '15px',
                                     borderTopRightRadius: '15px',
                                     backgroundColor: 'black',
@@ -157,7 +159,7 @@ const Features = ({ }) => {
                                     style={{
                                         display: 'flex',
                                         flexDirection: 'column',
-                                        justifyContent: 'center',
+                                        justifyContent: 'flex-start',
                                         alignItems: 'center',
                                         flex: '1',
                                         padding: '15px',
@@ -176,7 +178,7 @@ const Features = ({ }) => {
                                     </Typography>
                                     <Typography
                                         fontSize={16}
-                                        fontWeight={600}
+                                        fontWeight={500}
                                         sx={{
                                         fontFamily: 'Poppins, sans-serif',
                                         textAlign: 'center',
@@ -203,7 +205,7 @@ const Features = ({ }) => {
                                 <div
                                 style={{
                                     width: '100%',
-                                    // height: '150px',
+                                    height: '180px',
                                     borderTopLeftRadius: '15px',
                                     borderTopRightRadius: '15px',
                                     backgroundColor: 'black',
@@ -225,7 +227,7 @@ const Features = ({ }) => {
                                     style={{
                                         display: 'flex',
                                         flexDirection: 'column',
-                                        justifyContent: 'center',
+                                        justifyContent: 'flex-start',
                                         alignItems: 'center',
                                         flex: '1',
                                         padding: '15px',
@@ -244,7 +246,7 @@ const Features = ({ }) => {
                                     </Typography>
                                     <Typography
                                         fontSize={16}
-                                        fontWeight={600}
+                                        fontWeight={500}
                                         sx={{
                                         fontFamily: 'Poppins, sans-serif',
                                         textAlign: 'center',
@@ -271,7 +273,7 @@ const Features = ({ }) => {
                                 <div
                                 style={{
                                     width: '100%',
-                                    // height: '150px',
+                                    height: '180px',
                                     borderTopLeftRadius: '15px',
                                     borderTopRightRadius: '15px',
                                     backgroundColor: 'black',
@@ -293,7 +295,7 @@ const Features = ({ }) => {
                                     style={{
                                         display: 'flex',
                                         flexDirection: 'column',
-                                        justifyContent: 'center',
+                                        justifyContent: 'flex-start',
                                         alignItems: 'center',
                                         flex: '1',
                                         padding: '15px',
@@ -312,7 +314,7 @@ const Features = ({ }) => {
                                     </Typography>
                                     <Typography
                                         fontSize={16}
-                                        fontWeight={600}
+                                        fontWeight={500}
                                         sx={{
                                         fontFamily: 'Poppins, sans-serif',
                                         textAlign: 'center',
@@ -324,6 +326,31 @@ const Features = ({ }) => {
                             </Card>
                         </Grid>
                     </Grid>
+                        <Button 
+                            variant="contained" 
+                            sx={{ 
+                                margin: '0 auto',
+                                marginTop: '30px',
+                                width: '25%',
+                                borderRadius: '20px',
+                                background: 'var(--secondary)',
+                                paddingLeft: '30px',    
+                                paddingRight: '30px',      
+                                boxShadow: '2px 6px 4px rgba(0, 0, 0, 0.25)',                    
+                                color: '#000',
+                                '&:hover': {
+                                    background: 'var(--dark-blue)',
+                                    color: '#FFF'
+                                } 
+                            }}>
+                                <Typography variant="h6" fontWeight={500} 
+                                    sx={{
+                                        fontFamily: 'Poppins, sans-serif', 
+                                        textAlign: 'center'
+                                    }}>
+                                Solicitar Crédito
+                                </Typography>
+                        </Button>
             </Container>
 
         </div>
