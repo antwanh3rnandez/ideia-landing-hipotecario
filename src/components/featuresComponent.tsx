@@ -57,14 +57,14 @@ const Features = ({ }) => {
                                 }}
                             >
                                 <div
-                                style={{
-                                    width: '100%',
-                                    height: '180px',
-                                    borderTopLeftRadius: '15px',
-                                    borderTopRightRadius: '15px',
-                                    backgroundColor: 'black',
-                                    overflow: 'hidden',
-                                }}
+                                    style={{
+                                        width: '100%',
+                                        height: '180px',
+                                        borderTopLeftRadius: '15px',
+                                        borderTopRightRadius: '15px',
+                                        backgroundColor: 'black',
+                                        overflow: 'hidden',
+                                    }}
                                 >
                                     <img
                                         src={card1}
