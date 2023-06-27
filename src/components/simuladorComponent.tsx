@@ -21,6 +21,8 @@ import { formatter } from "../helpers/";
 
 const Simulador = ({ }) => {
 
+    const url = import.meta.env.VITE_URL_BUTTON;
+
     const [customClass, setCustomClass] = useState('1000px');
 
     useEffect(() => {
@@ -93,6 +95,7 @@ const Simulador = ({ }) => {
                                         fontWeight="700"
                                         p={2}
                                         sx={{
+                                            fontFamily: 'Poppins, sans-serif',
                                             bgcolor: "#000",
                                             color: "#fff",
                                         }}
@@ -230,6 +233,7 @@ const Simulador = ({ }) => {
                                         fontWeight="700"
                                         p={2}
                                         sx={{
+                                            fontFamily: 'Poppins, sans-serif',
                                             bgcolor: "#000",
                                             color: "#fff",
                                         }}
@@ -275,15 +279,23 @@ const Simulador = ({ }) => {
                                                 encontraremos una solución para ti.
                                                 </Typography>
                                             </Box>
-                                            <NextLink href="/first-step" passHref>
+                                            <NextLink 
+                                                href={url + `/first-step?propertyValue=` + propertyValue + `&downPaymentPercentage=` + downPaymentPercentage + `&loanTerm=` + loanTerm} passHref>
                                                 <Button
-                                                variant="contained"
+                                                    variant="contained"
 
-                                                size="large"
-                                                fullWidth
-                                                sx={{ mt: 2, background: '#000' }}
+                                                    size="large"
+                                                    fullWidth
+                                                    sx={{ 
+                                                        mt: 2, 
+                                                        background: '#000',
+                                                        '&:hover': {
+                                                            background: 'var(--secondary)',
+                                                            color: '#000'
+                                                        }
+                                                    }}
                                                 >
-                                                Quiero iniciar mi proceso
+                                                    Quiero iniciar mi proceso
                                                 </Button>
                                             </NextLink>
                                         </Box>
@@ -293,6 +305,7 @@ const Simulador = ({ }) => {
                         </Card>
                         <div style={{display: 'flex'}}>
                             <Button 
+                                href={url}
                                 variant="contained" 
                                 sx={{ 
                                     margin: '0 auto',
@@ -305,7 +318,7 @@ const Simulador = ({ }) => {
                                     boxShadow: '2px 6px 4px rgba(0, 0, 0, 0.25)',                    
                                     color: '#000',
                                     '&:hover': {
-                                        background: 'var(--dark-blue)',
+                                        background: 'var(--primary)',
                                         color: '#FFF'
                                     } 
                                 }}>

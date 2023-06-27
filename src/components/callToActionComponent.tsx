@@ -8,10 +8,7 @@ import callToAction from '../assets/callToAction.jpg';
 
 const Form = ({ }) => {
 
-    // const handleSubmit = (event) => {
-    //     event.preventDefault();
-    //     // 
-    //   };
+    const url = import.meta.env.VITE_URL_BUTTON;
 
     return (
         <div style={{  paddingTop: '50px', paddingBottom: '15px', background: 'white', width: '100%' }}>
@@ -74,6 +71,7 @@ const Form = ({ }) => {
                         ¡Tu momento es ahora!
                         </Typography>
                         <Button 
+                            href={url}
                             variant="contained" 
                             sx={{ 
                                 margin: '0 auto',
@@ -86,7 +84,7 @@ const Form = ({ }) => {
                                 boxShadow: '2px 6px 4px rgba(0, 0, 0, 0.25)',                    
                                 color: '#000',
                                 '&:hover': {
-                                    background: 'var(--dark-blue)',
+                                    background: 'var(--primary)',
                                     color: '#FFF'
                                 } 
                             }}>

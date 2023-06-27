@@ -11,6 +11,8 @@ import card4 from '../assets/card4.jpg';
 
 const Features = ({ }) => {
 
+    const url = import.meta.env.VITE_URL_BUTTON;
+
     return (
         <div style={{ width:'100%', background: 'white' }}>
             <Container 
@@ -323,6 +325,7 @@ const Features = ({ }) => {
                         </Grid>
                     </Grid>
                         <Button 
+                            href={url}
                             variant="contained" 
                             sx={{ 
                                 margin: '0 auto',
@@ -335,7 +338,7 @@ const Features = ({ }) => {
                                 boxShadow: '2px 6px 4px rgba(0, 0, 0, 0.25)',                    
                                 color: '#000',
                                 '&:hover': {
-                                    background: 'var(--dark-blue)',
+                                    background: 'var(--primary)',
                                     color: '#FFF'
                                 } 
                             }}>

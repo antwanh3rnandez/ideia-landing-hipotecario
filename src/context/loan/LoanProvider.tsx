@@ -1,5 +1,6 @@
 import { FC, PropsWithChildren, useMemo, useReducer } from "react";
 import { LoanContext, loanReducer } from "./";
+import axios from 'axios';
 
 export interface LoanState {
   propertyValue: number;
@@ -62,6 +63,24 @@ export const LoanProvider: FC<PropsWithChildren> = ({ children }) => {
       type: "[Loan] - SetLoanTerm",
       payload: loanTerm,
     });
+  };
+
+  const submitLoanData = async () => {
+    const endpoint = 'https://example.com/loan'; // URL del endpoint de destino
+
+    const requestData = {
+      propertyValue,
+      downPaymentPercentage,
+      loanTerm,
+    };
+
+    try {
+      const response = await axios.post(endpoint, requestData);
+      // Manejar la respuesta del endpoint si es necesario
+    } catch (error) {
+      // Manejar errores en la solicitud
+      console.error(error);
+    }
   };
 
   return (
