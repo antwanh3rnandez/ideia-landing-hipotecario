@@ -27,7 +27,7 @@ const Simulador = ({ }) => {
 
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth < 400) {
+            if (window.innerWidth < 500) {
                 setCustomClass('1500px');
             } else if (window.innerWidth < 900) {
                 setCustomClass('1300px');
