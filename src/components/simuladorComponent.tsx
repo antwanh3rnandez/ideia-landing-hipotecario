@@ -27,10 +27,10 @@ const Simulador = ({ }) => {
 
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth < 555) {
-                setCustomClass('1200px');
+            if (window.innerWidth < 400) {
+                setCustomClass('1500px');
             } else if (window.innerWidth < 900) {
-                setCustomClass('1200px');
+                setCustomClass('1300px');
             } else if (window.innerWidth < 1085) {
                 setCustomClass('700px');
             } else {
@@ -310,7 +310,6 @@ const Simulador = ({ }) => {
                                 sx={{ 
                                     margin: '0 auto',
                                     marginTop: '30px',
-                                    width: '25%',
                                     borderRadius: '20px',
                                     background: 'var(--secondary)',
                                     paddingLeft: '30px',    

@@ -330,7 +330,6 @@ const Features = ({ }) => {
                             sx={{ 
                                 margin: '0 auto',
                                 marginTop: '30px',
-                                width: '25%',
                                 borderRadius: '20px',
                                 background: 'var(--secondary)',
                                 paddingLeft: '30px',    

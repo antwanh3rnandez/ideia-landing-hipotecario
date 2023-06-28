@@ -76,7 +76,6 @@ const Form = ({ }) => {
                             sx={{ 
                                 margin: '0 auto',
                                 marginBottom: '25px',
-                                width: '25%',
                                 borderRadius: '20px',
                                 background: 'var(--secondary)',
                                 paddingLeft: '30px',    
